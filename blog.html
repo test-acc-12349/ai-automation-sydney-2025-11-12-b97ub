@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Automation Sydney Blog - Expert insights on n8n automation, workflow optimization, and AI integration for Sydney businesses.">
+    <meta name="keywords" content="n8n automation blog, AI automation, workflow automation, Sydney, automation guides, automation case studies">
+    <meta name="author" content="AI Automation Sydney">
+    <meta property="og:title" content="AI Automation Sydney Blog - Automation Insights & Guides">
+    <meta property="og:description" content="Expert insights on n8n automation, workflow optimization, and AI integration for Sydney businesses.">
+    <meta property="og:type" content="website">
+    <title>Blog - AI Automation Sydney</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .material-symbols-rounded {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-primary {
+            background-color: #FF5A5F;
+            color: white;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 90, 95, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: #FFD166;
+            color: #1A1A1A;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+        }
+        
+        .btn-secondary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 209, 102, 0.3);
+        }
+        
+        .card {
+            border-radius: 8px;
+            transition: all 300ms ease-out;
+            background: white;
+        }
+        
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 32px;
+            color: #FF5A5F;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FFD166 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 300ms ease-out;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+        
+        .star-rating {
+            color: #FFD166;
+            font-size: 14px;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        section {
+            transition: all 300ms ease-out;
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+
+        .blog-card {
+            border-radius: 8px;
+            transition: all 300ms ease-out;
+            background: white;
+            overflow: hidden;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-featured {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 scroll-smooth">
+    <!-- Header Navigation -->
+    <header class="w-full">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="https://test-acc-12349.github.io/ai-automation-sydney-2025-11-12-b97ub" class="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-300">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] flex items-center justify-center">
+                    <span class="material-symbols-rounded text-white text-2xl">rocket</span>
+                </div>
+                <h1 class="text-xl font-semibold text-[#1A1A1A]">AI Automation Sydney</h1>
+            </a>
+
+            <!-- Back Link -->
+            <a href="https://test-acc-12349.github.io/ai-automation-sydney-2025-11-12-b97ub" class="text-gray-700 hover:text-[#FF5A5F] transition-colors duration-300 font-medium flex items-center space-x-1">
+                <span>← Back</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Blog Header Section -->
+    <section class="relative py-20 md:py-32 lg:py-40 bg-gradient-to-br from-white via-gray-50 to-white overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-10 left-10 w-72 h-72 bg-[#FF5A5F] rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-72 h-72 bg-[#FFD166] rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center space-y-6">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-[#1A1A1A]">
+                    Our <span class="gradient-text">Blog</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 font-light max-w-3xl mx-auto">
+                    Expert insights, guides, and case studies on n8n automation, workflow optimization, and AI integration for modern businesses
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-gray-50 to-white rounded-lg border border-gray-200 p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-semibold text-[#1A1A1A] mb-6">
+                    Welcome to the AI Automation Sydney Blog
+                </h2>
+                <div class="space-y-4 text-gray-700 font-light leading-relaxed">
+                    <p>
+                        Our blog is your go-to resource for everything related to workflow automation, n8n implementation, and AI-powered business transformation. Whether you're just starting your automation journey or looking to optimize existing workflows, you'll find practical insights, detailed guides, and real-world case studies from our team of automation experts.
+                    </p>
+                    <p>
+                        We cover a wide range of topics including:
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                        <li><strong>n8n Automation Guides:</strong> Step-by-step tutorials and best practices for implementing n8n in your organization</li>
+                        <li><strong>Workflow Optimization:</strong> Strategies to streamline your business processes and eliminate manual tasks</li>
+                        <li><strong>AI Integration:</strong> How to leverage Claude AI and machine learning within your automation workflows</li>
+                        <li><strong>Case Studies:</strong> Real-world examples of how Sydney businesses have transformed their operations</li>
+                        <li><strong>Industry Insights:</strong> Trends, tips, and emerging technologies in the automation space</li>
+                        <li><strong>Technical Deep Dives:</strong> Advanced topics for developers and technical decision-makers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-semibold text-[#1A1A1A] mb-8">Latest Articles</h2>
+            </div>
+
+            <!-- Featured Post Card -->
+            <div class="blog-featured bg-white mb-12">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
+                    <!-- Featured Image/Icon -->
+                    <div class="bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] flex items-center justify-center p-12 lg:p-8">
+                        <span class="material-symbols-rounded text-white text-8xl">automation</span>
+                    </div>
+
+                    <!-- Featured Content -->
+                    <div class="lg:col-span-2 p-8 md:p-12 flex flex-col justify-center">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="inline-block px-3 py-1 bg-[#FFD166] text-[#1A1A1A] text-xs font-semibold rounded-full">Featured</span>
+                            <span class="text-sm text-gray-500 font-light">November 12, 2025</span>
+                        </div>
+                        
+                        <h3 class="text-3xl md:text-4xl font-semibold text-[#1A1A1A] mb-4 leading-tight">
+                            How n8n Workflow Automation Transforms Sydney Businesses
+                        </h3>
+                        
+                        <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">
+                            Discover how n8n workflow automation transforms Sydney businesses by eliminating repetitive tasks and reducing operational costs. This comprehensive guide explores n8n's power to connect over 1000 applications, automate complex processes, and deliver significant ROI within months. Learn key benefits including time savings, error reduction, and improved scalability. Explore real-world applications from lead management to invoice processing, understand technical foundations, and discover best practices for successful implementation.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://test-acc-12349.github.io/ai-automation-sydney-2025-11-12-b97ub/blog/ai-automation-sydney.html" class="btn-primary text-center sm:text-left">
+                                <span class="flex items-center justify-center sm:justify-start space-x-2">
+                                    <span>Read Full Article</span>
+                                    <span class="material-symbols-rounded text-lg">arrow_forward</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Grid Placeholder -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold text-[#1A1A1A] mb-8">More Articles Coming Soon</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Placeholder Card 1 -->
+                    <div class="blog-card shadow-md p-8 border border-gray-200">
+                        <div class="h-8 bg-gray-200 rounded mb-4 animate-pulse"></div>
+                        <div class="h-6 bg-gray-200 rounded mb-4 w-3/4 animate-pulse"></div>
+                        <div class="space-y-3 mb-6">
+                            <div class="h-4 bg-gray-100 rounded animate-pulse"></div>
+                            <div class="h-4 bg-gray-100 rounded animate-pulse"></div>
+                            <div class="h-4 bg-gray-100 rounded w-5/6 animate-pulse"></div>
+                        </div>
+                        <div class="h-10 bg-gray-200 rounded w-32 animate-pulse"></div>
+                    </div>
+
+                    <!-- Placeholder Card 2 -->
+                    <div class="blog-card shadow-md p-8 border border-gray-200">
+                        <div class="h-8 bg-gray-200 rounded mb-4 animate-pulse"></div>
+                        <div class="h-6 bg-gray-200 rounded mb-4 w-3/4 animate-pulse"></div>
+                        <div class="space-y-3 mb-6">
+                            <div class="h-4 bg-gray-100 rounded animate-pulse"></div>
+                            <div class="h-4 bg-gray-100 rounded animate-pulse"></div>
+                            <div class="h-4 bg-gray-100 rounded w-5/6 animate-pulse"></div>
+                        </div>
+                        <div class="h-10 bg-gray-200 rounded w-32 animate-pulse"></div>
+                    </div>
+
+                    <!-- Placeholder Card 3 -->
+                    <div class="blog-card shadow-md p-8 border border-gray-200">
+                        <div class="h-8 bg-gray-200 rounded mb-4 animate-pulse"></div>
+                        <div class="h-6 bg-gray-200 rounded mb-4 w-3/4 animate-pulse"></div>
+                        <div class="space-y-3 mb-6">
+                            <div class="h-4 bg-gray-100 rounded animate-pulse"></div>
+                            <div class="h-4 bg-gray-100 rounded animate-pulse"></div>
+                            <div class="h-4 bg-gray-100 rounded w-5/6 animate-pulse"></div>
+                        </div>
+                        <div class="h-10 bg-gray-200 rounded w-32 animate-pulse"></div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <p class="text-lg text-gray-600 font-light mb-6">
+                        We're regularly publishing new content on automation best practices, case studies, and technical guides. Check back soon for more insights!
+                    </p>
+                    <a href="https://test-acc-12349.github.io/ai-automation-sydney-2025-11-12-b97ub" class="btn-secondary">
+                        <span class="flex items-center justify-center space-x-2">
+                            <span>Return to Home</span>
+                            <span class="material-symbols-rounded text-lg">home</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop'); opacity: 0.2;"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#1A1A1A] via-[#1A1A1A]/90 to-[#1A1A1A]/80"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center space-y-8">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight">
+                    Ready to Transform Your Business?
+                </h2>
+                <p class="text-xl text-gray-200 font-light max-w-2xl mx-auto">
+                    Join hundreds of Australian businesses that have already discovered the power of intelligent automation. Let's build your custom solution today.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                    <a href="https://test.com" class="btn-primary text-center">
+                        <span class="flex items-center justify-center space-x-2">
+                            <span>Schedule Your Free Consultation</span>
+                            <span class="material-symbols-rounded text-lg">arrow_forward</span>
+                        </span>
+                    </a>
+                    <a href="mailto:admin@test.com" class="btn-secondary text-center">
+                        <span class="flex items-center justify-center space-x-2">
+                            <span>Contact Us</span>
+                            <span class="material-symbols-rounded text-lg">mail</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A1A1A] text-gray-300 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] flex items-center justify-center">
+                            <span class="material-symbols-rounded text-white text-lg">rocket</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white">AI Automation Sydney</h3>
+                    </div>
+                    <p class="text-sm font-light leading-relaxed">
+                        Sydney's leading n8n automation agency, transforming businesses through intelligent workflow automation and AI integration.
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-white">Services</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li><a href="https://test-acc-12349.github.io/ai-automation-sydney-2025-11-12-b97ub#features" class="hover:text-[#FF5A5F] transition-colors duration-300">n8n Automation</a></li>
+                        <li><a href="https://test-acc-12349.github.io/ai-automation-sydney-2025-11-12-b97ub#features" class="hover:text-[#FF5A5F] transition-colors duration-300">Workflow Design</a></li>
+                        <li><a href="https://test-acc-12349.github.io/ai-automation-sydney-2025-11-12-b97ub#features" class="hover:text-[#FF5A5F] transition-colors duration-300">API Integration</a></li>
+                        <li><a href="https://test-acc-12349.github.io/ai-automation-sydney-2025-11-12-b97ub#features" class="hover:text-[#FF5A5F] transition-colors duration-300">Support & Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-white">Resources</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li><a href="blog.html" class="hover:text-[#FF5A5F] transition-colors duration-300">Blog</a></li>
+                        <li><a href="https://test-acc-12349.github.io/ai-automation-sydney-2025-11-12-b97ub#faq" class="hover:text-[#FF5A5F] transition-colors duration-300">FAQ</a></li>
+                        <li><a href="https://test-acc-12349.github.io/ai-automation-sydney-2025-11-12-b97ub#testimonials" class="hover:text-[#FF5A5F] transition-colors duration-300">Case Studies</a></li>
+                        <li><a href="https://test.com" class="hover:text-[#FF5A5F] transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-white">Legal</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li><a href="privacy.html" class="hover:text-[#FF5A5F] transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-[#FF5A5F] transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="blog.html" class="hover:text-[#FF5A5F] transition-colors duration-300">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="border-t border-gray-700 pt-8 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="flex items-center space-x-3">
+                        <span class="material-symbols-rounded text-[#FF5A5F]">mail</span>
+                        <div>
+                            <p class="text-xs text-gray-500 font-light">Email</p>
+                            <a href="mailto:admin@test.com" class="text-sm font-light hover:text-[#FF5A5F] transition-colors duration-300">admin@test.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="material-symbols-rounded text-[#FF5A5F]">location_on</span>
+                        <div>
+                            <p class="text-xs text-gray-500 font-light">Location</p>
+                            <p class="text-sm font-light">Sydney, Australia</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="material-symbols-rounded text-[#FF5A5F]">schedule</span>
+                        <div>
+                            <p class="text-xs text-gray-500 font-light">Hours</p>
+                            <p class="text-sm font-light">Mon - Fri, 9AM - 6PM AEST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social & Copyright -->
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-[#FF5A5F] transition-colors duration-300 flex items-center justify-center" aria-label="Facebook">
+                        <i class="fab fa-facebook-f text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-[#FF5A5F] transition-colors duration-300 flex items-center justify-center" aria-label="Twitter">
+                        <i class="fab fa-twitter text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-[#FF5A5F] transition-colors duration-300 flex items-center justify-center" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-[#FF5A5F] transition-colors duration-300 flex items-center justify-center" aria-label="Instagram">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                </div>
+                <p class="text-sm font-light text-gray-500">
+                    &copy; 2025 AI Automation Sydney. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
